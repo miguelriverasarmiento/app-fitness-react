@@ -1,4 +1,4 @@
-class BokkingsController < ApplicationController
+class BookingsController < ApplicationController
 
   def index
     booking = Booking.all
@@ -24,6 +24,6 @@ class BokkingsController < ApplicationController
 
   private
     def booking_param
-      params.require(:booking).permit(:user_id, :clas_id, :date)
+      params.require(:booking).permit(:user_id, :clas_id, :date, :name)
     end
 end

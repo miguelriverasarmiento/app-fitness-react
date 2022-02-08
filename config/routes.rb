@@ -7,4 +7,7 @@ Rails.application.routes.draw do
     resources :bookings
     
   end
+
+  post '/create', to: 'class_avs#create', via: :all
+  
 end
