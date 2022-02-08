@@ -1,29 +1,34 @@
 class ClassAvsController < ApplicationController
 
   def index
-    classAv = ClassAv.all
-    render json: classAv
+    clas = ClassAv.all
+    render json: clas
   end
 
   def create
-    classAv = ClassAv.create(classAv_param)
-    render json: classAv
+    clas = ClassAv.create(clas_params)
+    
+    if clas.save
+     render json: clas
+    else
+     render json: { error: review.errors.messages }, status: 422
+    end
   end
 
   def update
-    classAv = ClassAv.find(params[:id])
-    classAv.update(classAv_param)
+    clas = ClassAv.find(params[:id])
+    clas.update(clas_params)
     render json: tdlist
   end
 
   def destroy
-    classAv = ClassAv.find(params[:id])
-    classAv.destroy
+    clas = ClassAv.find(params[:id])
+    clas.destroy
     head :no_content, status: :ok
   end
 
   private
-    def classAv_param
-      params.require(:classAv).permit(:name, :date, :quotas)
+    def clas_params
+      params.require(:class_av).permit(:name, :date, :quotas)
     end
 end
