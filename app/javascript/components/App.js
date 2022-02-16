@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Redirect, Link } from 'react-router-dom'
 import Class_av from './class_av/Class_av'
 import Booking from './booking/Booking'
 import Home from './home/Home'

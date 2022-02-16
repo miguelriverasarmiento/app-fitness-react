@@ -7,7 +7,11 @@ class BookingsController < ApplicationController
 
   def create
     booking = Booking.create(booking_param)
-    render json: booking
+    if booking.save
+     render json: booking
+    else
+     render json: { error: review.errors.messages }, status: 422
+    end
   end
 
   def update
