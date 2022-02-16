@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     
   end
 
-  post '/create', to: 'class_avs#create', via: :all
+  post '/create', to: 'class_avs#create'
+  post '/create', to: 'bookings#create'
   
 end
