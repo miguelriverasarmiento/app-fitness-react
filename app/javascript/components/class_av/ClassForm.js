@@ -33,29 +33,46 @@ const ClassForm = (props) => {
 		return (
 
 		<React.Fragment>	
-			<div>
-				<h1>Crear clase fitness</h1>
-				<div>
+			<div className="classPage">
+				<h1 className="titleForm">Crear clase fitness</h1>
+				<div className = "formBox">
 			  		<form onSubmit={handleSubmit} >
-			  			<label>Nombre de clase: </label>
-                        <input type="text" name='name' onChange={handleChange} value={class_av.name} placeholder="Nombre de la clase" />			  				
-				  	
+			  			<div className="row">
+			  				<div className="laIn-01">
+			  					<label>Nombre de clase: </label>
+			  				</div>
+			  				<div className="laIn-02">
+                        		<input type="text" name='name' onChange={handleChange} value={class_av.name} placeholder="Nombre de la clase" />
+                        	</div>			  				
+				  		</div>
 			  			<br />
-			  			<label>Fecha de inicio: </label>
-		  				<input type="date" name='date' onChange={handleChange} value={class_av.date} placeholder="Fecha de inicio de clase" />
-				  	
+			  			<div className="row">
+			  				<div className="laIn-01">
+			  					<label>Fecha de inicio: </label>
+			  				</div>
+			  				<div className="laIn-02">
+		  						<input type="date" name='date' onChange={handleChange} value={class_av.date} placeholder="Fecha de inicio de clase" />
+		  					</div>
+				  		</div>
 			  			<br />
-			  			<label> Reservas disponibles: </label>
-			  			<input type="number" name='quotas' onChange={handleChange} value={class_av.quotas} placeholder="Cupos de clase" />
-			  		
+			  			<div className="row">
+			  				<div className="laIn-01">
+			  					<label> Reservas disponibles: </label>
+			  				</div>
+			  				<div className="laIn-02">
+			  					<input type="number" name='quotas' onChange={handleChange} value={class_av.quotas} placeholder="Cupos de clase" />
+			  				</div>
+			  			</div>
 			  			<br />
 			  			<br />
+			  			<div className="row">
 			  			<button type="submit">Crear clase</button>
+			  			</div>
 			  		</form>
 				</div>
 			</div>
 
-			<div>
+			<div className="homeLink">
 				<Link to="/class_avs">Volver</Link>
 			</div>
 

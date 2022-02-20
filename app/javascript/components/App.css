@@ -1,0 +1,121 @@
+/* Home */
+body {
+  background-color: #90A4AE;
+}
+
+.container {
+	display: inherit;
+	text-align: left;
+	background: #CDDC39;
+	padding: 100px;
+	border: 1px solid #efefef;
+}
+
+h1.titleOne {
+	font-size: 42px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:link {
+	display: inline-block;
+	background-color: #E6EE9C;
+    padding: 5px 5px;
+	text-align: center;
+    text-decoration: none;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+a:hover {
+  	background-color: #D7CCC8;
+  	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	margin: 5px;
+	margin-left: -30px;
+}
+
+/* Class page */
+
+.classPage {
+  	margin-bottom: 40px;
+  	margin-left: 25px;
+}
+
+th, td {
+  padding: 6px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.fileFill:hover {
+	background-color: #CDDC39;
+}
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+button {
+	padding: 5px;
+  	text-align: left;
+}
+
+.homeLink {
+	margin-left: 25px;
+}
+
+/* Create class form */
+
+.formBox {
+
+	margin-top: 40px;
+	width: 50%;
+	border-radius: 5px;
+ 	padding: 15px;
+ 	border: 1px solid #EEEEEE;
+ 	background-color: #78909C;
+}
+
+.titleForm{
+	margin-top: 40px;
+}
+
+label {
+  padding: 12px 12px 12px 12px;
+  display: inline-block;
+}
+
+input {
+  width: 335px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.laIn-01 {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+}
+
+.laIn-02 {
+  float: right;
+  width: 57%	;
+  margin-top: 15px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
