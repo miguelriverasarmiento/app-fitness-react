@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 function Home() {
 	return(
 
-		<div >
-			<h1>Clases de fitness</h1>	
+		<div className="container">
+			<h1 className="titleOne">Clases de fitness</h1>	
 		  	<ul>
 				<li>
 				  	<Link to="/class_avs">Clases Disponibles</Link>

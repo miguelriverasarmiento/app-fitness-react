@@ -29,19 +29,20 @@ function Booking() {
 
 	return(	
 		<React.Fragment>
-			<div>
-				<h1>Clases Reservadas</h1>
+			<div className="classPage">
+				<h1 className="booTitle">Clases Reservadas</h1>
 				
 				<table>
 					<thead>
 						<tr>
 							<th>Nombre</th>
 							<th>Fecha</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						{bookings.map(boo => (
-							<tr key={boo.id}>
+							<tr key={boo.id} className="fileFill">
 								<td>{boo.name}</td>
 								<td>{boo.date}</td>
 								<td><button onClick={(e) => DeleteBoo(boo.id, e)}>Eliminar</button></td>
@@ -51,7 +52,7 @@ function Booking() {
 				</table>
 			</div>
 
-			<div>
+			<div className="homeLink">
 				<Link to="/">Home</Link>
 			</div>
 

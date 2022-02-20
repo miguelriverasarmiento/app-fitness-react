@@ -39,8 +39,8 @@ function Class_av() {
 	return(
 
 		<React.Fragment>
-			<div>
-				<h1>Clases Disponibles</h1>
+			<div className="classPage">
+				<h1 className="classTitle">Clases Disponibles</h1>
 				
 				<table>
 					<thead>
@@ -48,11 +48,13 @@ function Class_av() {
 							<th>Nombre</th>
 							<th>Fecha</th>
 							<th>Cupos</th>
+							<th></th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						{class_avs.map(clas => (
-							<tr key={clas.id}>
+							<tr key={clas.id} className="fileFill">
 								<td>{clas.name}</td>
 								<td>{clas.date}</td>
 								<td>{clas.quotas}</td>
@@ -65,7 +67,7 @@ function Class_av() {
 
 			</div>
 			
-			<div>
+			<div className="homeLink">
 				<Link to="/">Home</Link>
 			</div>
 

@@ -4,6 +4,7 @@ import Class_av from './class_av/Class_av'
 import Booking from './booking/Booking'
 import Home from './home/Home'
 import ClassForm from './class_av/ClassForm'
+import "./App.css";
 
 function App() {
 	return (
