@@ -18,7 +18,7 @@ class ClassAvsController < ApplicationController
   def update
     clas = ClassAv.find(params[:id])
     clas.update(clas_params)
-    render json: tdlist
+    render json: clas
   end
 
   def destroy

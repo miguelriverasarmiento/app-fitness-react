@@ -18,18 +18,18 @@ h1.titleOne {
 }
 
 a:link {
-	display: inline-block;
-	background-color: #E6EE9C;
-    padding: 5px 5px;
-	text-align: center;
-    text-decoration: none;
-    justify-content: space-around;
-    list-style-type: none;
+  display: inline-block;
+  background-color: #E6EE9C;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
 a:hover {
-  	background-color: #D7CCC8;
-  	color: black;
+	background-color: #D7CCC8;
+	color: black;
 }
 
 ul {
@@ -37,15 +37,15 @@ ul {
 }
 
 ul li {
-	margin: 5px;
-	margin-left: -30px;
+  margin: 5px;
+  margin-left: -30px;
 }
 
 /* Class page */
 
 .classPage {
-  	margin-bottom: 40px;
-  	margin-left: 25px;
+	margin-bottom: 40px;
+	margin-left: 25px;
 }
 
 th, td {
@@ -65,7 +65,7 @@ table {
 
 button {
 	padding: 5px;
-  	text-align: left;
+  text-align: left;
 }
 
 .homeLink {
@@ -77,7 +77,7 @@ button {
 .formBox {
 
 	margin-top: 40px;
-	width: 50%;
+	width: 45%;
 	border-radius: 5px;
  	padding: 15px;
  	border: 1px solid #EEEEEE;
@@ -102,12 +102,12 @@ input {
 }
 .laIn-01 {
   float: left;
-  width: 25%;
+  width: 35%;
   margin-top: 15px;
 }
 
 .laIn-02 {
-  float: right;
+  float: left;
   width: 57%	;
   margin-top: 15px;
 }
