@@ -73,7 +73,7 @@ const ClassForm = (props) => {
 			</div>
 
 			<div className="homeLink">
-				<Link to="/class_avs">Volver</Link>
+				<Link to="/">Volver</Link>
 			</div>
 
 		</React.Fragment>
