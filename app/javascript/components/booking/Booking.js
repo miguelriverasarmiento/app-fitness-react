@@ -21,10 +21,11 @@ function Booking() {
 	function DeleteBoo(id, e) {
 		axios.delete(`/api/v1/bookings/${id}`)
 		.then((response) => {
-				console.log(response.data);
-			}).catch((error) => {
-	          	console.log(error);
-			});
+			const bookingsList = bookings.filter(booking => booking.id !== id);
+            setBookings(bookingsList);
+		}).catch((error) => {
+	       	console.log(error);
+		});
 	}
 
 	return(	
