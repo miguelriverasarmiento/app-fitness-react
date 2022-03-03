@@ -30,7 +30,6 @@ function Class_av() {
 		axios.put(`/api/v1/class_avs/${id}`, { name: class_av.name, date: class_av.date, quotas: quo })
 			.then((res) => {
 				console.log(res.data);
-				setClass_av(res.data)
 			})
 			.catch( res => console.log(res));
 
@@ -51,10 +50,12 @@ function Class_av() {
 	function ClassDelete(id, e) {
 		axios.delete(`/api/v1/class_avs/${id}`)
 		.then((response) => {
-				console.log(response.data);
-			}).catch((error) => {
-	          	console.log(error);
-			});
+               const class_avsList = class_avs.filter(class_av => class_av.id !== id);
+               setClass_avs(class_avsList);
+               
+           }).catch((error) => {
+               console.log(error.response.data)
+           });
 	}
 
 	return(
