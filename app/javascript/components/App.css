@@ -1,13 +1,24 @@
-/* Home */
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: #90A4AE;
+  overflow: hidden;
 }
+
+/* Layout */
+.nav {
+  padding: 4px;
+}
+
+/* Home */
 
 .container {
 	display: inherit;
 	text-align: left;
 	background: #CDDC39;
-	padding: 100px;
+	padding: 140px;
 	border: 1px solid #efefef;
 }
 
@@ -17,6 +28,10 @@ h1.titleOne {
 	margin-right: auto;
 }
 
+a {
+  color: black;
+}
+
 a:link {
   display: inline-block;
   background-color: #E6EE9C;
@@ -24,7 +39,7 @@ a:link {
   text-align: center;
   text-decoration: none;
   justify-content: space-around;
-  list-style-type: none;
+
 }
 
 a:hover {
@@ -64,11 +79,18 @@ table {
 }
 
 button {
-	padding: 5px;
+	padding: 6px;
   text-align: left;
+  background-color: #E6EE9C;
+  border-style: hidden;
+}
+button:hover {
+  background-color: #D7CCC8;
+  color: black;
 }
 
 .homeLink {
+  margin-bottom: 20px;
 	margin-left: 25px;
 }
 
@@ -76,7 +98,7 @@ button {
 
 .formBox {
 
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 45%;
 	border-radius: 5px;
  	padding: 15px;
@@ -85,7 +107,7 @@ button {
 }
 
 .titleForm{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 label {

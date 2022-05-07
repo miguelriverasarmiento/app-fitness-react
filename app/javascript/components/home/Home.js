@@ -1,27 +1,17 @@
 import React from "react"
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 
-function Home() {
-	return(
+const Home = (props) => {
 
+
+	return (
+		
 		<div className="container">
-			<h1 className="titleOne">Clases de fitness</h1>	
-		  	<ul>
-				<li>
-				  	<Link to="/class_avs">Clases Disponibles</Link>
-				</li>
+			<h1 className="titleOne">Clases de fitness</h1>
 
-				<li>
-				  	<Link to="/bookings">Mis Reservas</Link>
-				</li>
-
-				<li>
-					<Link to="/create">Crear clase fitness</Link>
-				</li>
-	
-         	</ul>
+			<h3>{props.loggedInStatus}</h3>
 		</div>
-	)
+		);
 }
 
 export default Home
